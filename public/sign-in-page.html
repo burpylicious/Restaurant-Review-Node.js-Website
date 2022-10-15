@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel='stylesheet' type='text/css' href='signing.css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:+Slab" rel="stylesheet">
+    </head>
+
+        <body class='grad'>
+            <header>
+                <nav>
+                <h1><a href='home-page.html'>DishCovery</a></h1>
+                </nav>
+            </header>
+
+            <br>
+            <br>
+            <form>
+                <h1>Welcome Back</h1>
+                <div>
+                <input type='text' id='usernameLogin' placeholder='Username'>
+                </div>
+                <br>
+                <div>
+                <input type='text' id='passwordLogin' placeholder='Password'>
+                </div>
+                <br>
+                <button onclick="loginMe();" type='button' id='open'>Sign in</button>
+                <div>
+                    <br>
+                <a href='sign-up-page.html' style=color:black;>New to Dishcovery? Sign up here!</a></div>
+            </form>
+
+            <div class="modal-container" id='modal_container' style='pointer-events:none; opacity: 0;'>
+                <div class='modal'>
+                    <h1>Login Successful!</h1>
+                    <p>
+                        Click the button below to continue
+                    </p>
+                    <button id="close">
+                        <a href='home-page.html'>
+                        Continue
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal-container" id='modal_container2' style='pointer-events:none; opacity: 0;'>
+                <div class='modal'>
+                    <h1>Login Unsuccessful</h1>
+                    <p>
+                        Click the button below to retry
+                    </p>
+                    <button id="close">
+                        <a href='sign-in-page.html'>
+                        Retry
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+        </body>
+        <script src="js/login.js"></script>
+        <script src="js/user.js"></script>
+
+</html>

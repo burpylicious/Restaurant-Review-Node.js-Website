@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel='stylesheet' type='text/css' href='signing.css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:+Slab" rel="stylesheet">
+    </head>
+
+        <body class='grad'>
+            <header>
+                <nav>
+                <h1><a href='home-page.html'>DishCovery</a></h1>
+                </nav>
+            </header>
+
+            <br>
+            <br>
+            <form>
+                <h1>Get Started</h1>
+                <input type='text' id='first-name' placeholder='First name'>
+                <input type='text' id='last-name' placeholder='Last name'>
+                <br>
+                <br>
+                <br>
+                <div>
+                <input type='text' id='username' placeholder='Username'>
+                </div>
+                <br>
+                <div>
+                <input type='email' id='email_address' placeholder='Email'>
+                </div>
+                <br>
+                <div>
+                <input type='text' id='address' placeholder='Location'>
+                </div>
+                <br>
+                <br>
+                <div>
+                <input type='text' id='mobile_number' placeholder='Number'>
+                </div>
+
+                <label for="genders">Gender:</label>
+
+                <select id="gender">
+                  <option value="M">Male</option>
+                  <option value="F">Female</option>
+                </select>
+
+                <div>
+                <br>
+                <input type='password' id='password' placeholder='Password'>
+                <input type='password' id='confirm-password' placeholder='Confirm Password'>
+                </div>
+                <br>
+                <br>   
+                <button onclick="registerMe();" type='button' id="open">Sign up</button>
+                <div>
+                    <br>
+                <a href='sign-in-page.html' style=color:black;>Already use DishCovery? Sign in here!</a>
+                </div>
+            </form>
+
+            <div class="modal-container" id='modal_container'>
+                <div class='modal'>
+                    <h1>Register Successful!</h1>
+                    <p>
+                        Click the button below to continue
+                    </p>
+                    <button id="close">
+                        <a href='home-page.html'>
+                        Continue
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </body>
+        
+        <script src="js/user.js"></script>
+        <script src="js/register.js"></script>
+</html>
